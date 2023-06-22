@@ -1,3 +1,4 @@
+//functions to do the conversion
 function CtoF(x){
     return (x*9/5 + 32)
 }
@@ -34,6 +35,7 @@ function CtoC(x){
     return x
 }
 
+//function that changes the text "formula" using the two temperature measurements
 function ChangeFormulaText(ch1_v,ch2_v){
     if (ch1_v == ch2_v) {
         document.getElementById("formula-display").innerHTML = String(temp1_v + "°" + ch1_v + " = " + temp2_v + "°" + ch2_v);
@@ -71,6 +73,7 @@ let ch2_v = "F";
 let temp1_v = 0;
 let temp2_v = 0;
 
+//called whenever something is changed ("change" is the code to pass which slot is changed)
 function convert(change) {
     //if temperature 1 slot is changed
     if (change == "t1") {
