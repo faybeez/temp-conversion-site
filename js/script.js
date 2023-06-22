@@ -36,7 +36,7 @@ function CtoC(x){
 
 function ChangeFormulaText(ch1_v,ch2_v){
     if (ch1_v == ch2_v) {
-        document.getElementById("formula-display").innerHTML = String(temp1_v + "°" + ch1_v + "=" + temp2_v + "°" + ch2_v);
+        document.getElementById("formula-display").innerHTML = String(temp1_v + "°" + ch1_v + " = " + temp2_v + "°" + ch2_v);
     }
     else if (ch1_v == "C") {
         if (ch2_v == "F") {
